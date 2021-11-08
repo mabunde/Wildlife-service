@@ -1,8 +1,9 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
-group 'virtual-pets '
+group 'wildlife_tracker'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
