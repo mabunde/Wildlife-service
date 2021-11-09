@@ -1,0 +1,17 @@
+.topic{
+text-align: center;
+font-size: 24px;
+}
+*{
+    background-color:rgb(52 78 54);
+}
+.intro{
+color:white;
+font-size:18px;
+}
+option{
+color:white;
+}
+.presentation{
+font-size:20px;
+}
