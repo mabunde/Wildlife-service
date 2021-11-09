@@ -2,7 +2,7 @@
     <div class="container-fluid">
         <div class="row container">
             <div class="col-md-6">
-                <p>All Animals</p>
+                <p class="animals">All Animals</p>
                 {{#if animals}}
                     {{#each animals}}
                         <ul id="animals">
@@ -11,7 +11,7 @@
                             <li>Health: <span id="value">  {{health}}</span></li>
                             <li>Age: <span id="value">  {{age}}</span></li>
                             <li>Location Spotted: <span id="value">{{location}}</span><span id="value"></span></li>
-                            <p id="ranger">Tracked by: <span id="value">{{ranger}}</p>
+                            <p id="ranger">Submitted by: <span id="value">{{ranger}}</p>
                         </ul>
                     {{/each}}
                     <div class="buttons">
@@ -27,7 +27,7 @@
                 {{/if}}
             </div>
             <div class="col-md-6">
-                <img src="" alt="success">
+               <img src="/images/tiger.gif" height="450" width="600" alt="elephant">
             </div>
         </div>
     </div>

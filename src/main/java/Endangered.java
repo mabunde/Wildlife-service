@@ -8,15 +8,15 @@ import java.util.Timer;
 public class Endangered implements DatabaseManagement {
     private int id;
     private String name;
-    private String endangered;
+    private String danger;
     private String health;
     private String age;
     private String location;
     private String ranger;
 
-    public Endangered(String name, String endangered, String health, String age, String location, String ranger) {
+    public Endangered(String name, String danger, String health, String age, String location, String ranger) {
         this.name = name;
-        this.endangered = endangered;
+        this.danger = danger;
         this.health = health;
         this.age = age;
         this.location = location;
@@ -28,7 +28,7 @@ public class Endangered implements DatabaseManagement {
     }
 
     public String getEndangered() {
-        return endangered;
+        return danger;
     }
 
     public String getHealth() {
@@ -71,7 +71,7 @@ public class Endangered implements DatabaseManagement {
             String sql = "INSERT INTO animals (name, danger, health, age, location, ranger) VALUES (:name, :danger, :health, :age, :location, :ranger)";
             this.id = (int) con.createQuery(sql, true)
                     .addParameter("name", this.name)
-                    .addParameter("danger", this.endangered)
+                    .addParameter("danger", this.danger)
                     .addParameter("health", this.health)
                     .addParameter("age", this.age)
                     .addParameter("location", this.location)
