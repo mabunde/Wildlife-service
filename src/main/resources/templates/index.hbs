@@ -1,0 +1,52 @@
+{{#partial "content"}}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6">
+                <!--                <img src="/images/elephant.png" alt="elephant">-->
+            </div>
+            <div class="col-md-6 container">
+                <p>Let’s Track Our WildLife</p>
+                <form action="/animals/new" method="post">
+                    <div class="form-group">
+                        <input name="animal" type="text" id="animal" class="form-control"
+                               placeholder="Name Of Animal...">
+                    </div>
+                    <div class="form-group">
+                        <select name="danger" id="danger" class="form-control">
+                            <option value="endangered">Endangered</option>
+                            <option value="not-endangered">Not Endangered</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select name="health" id="health" class="form-control">
+                            <option value="healthy">Healthy</option>
+                            <option value="ill">Ill</option>
+                            <option value="okay">Okay</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select name="age" id="age" class="form-control">
+                            <option value="newborn">Newborn</option>
+                            <option value="young">Young</option>
+                            <option value="adult">Adult</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <select name="location" id="location" class="form-control">
+                            <option value="zone-a">Zone A(Tsavo)</option>
+                            <option value="zone-b">Zone B(Kakamega)</option>
+                            <option value="zone-c">Zone C(Amboseli)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input name="ranger" type="text" id="ranger" class="form-control"
+                               placeholder="Name Of the Ranger...">
+                    </div>
+                    <button type="submit" class="btn btn-submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{{/partial}}
+
+{{> layout.hbs}}
