@@ -42,5 +42,21 @@ public class Animal {
                     .executeAndFetch(Animal.class);
         }
     }
+    public static Animal find(int id) {
+        try (Connection con = DB.sql2o.open()) {
+            String sql = "SELECT * FROM animals WHERE id=:id";
+            return con.createQuery(sql)
+                    .addParameter("id", id)
+                    .executeAndFetchFirst(Animal.class);
+        }
+    }
+    public List<Sighting> getSightings() {
+        try (Connection con = DB.sql2o.open()) {
+            String sql = "SELECT * FROM sightings WHERE animalId=:id";
+            return con.createQuery(sql)
+                    .addParameter("id", this.id)
+                    .executeAndFetch(Sighting.class);
+        }
+    }
 
 }
