@@ -10,13 +10,15 @@ It is an application that allows Rangers to track wildlife sightings in various 
 * cd to Wildlife-service/
 * open with intellij IDEA or your preferred editor
 * Run the gradle
-* Open the localhost on your browser
+* Open the localhost on your browser http://localhost:4567
+
 
 ## DATABASE SETUP
 * CREATE DATABASE wildlife_tracker;
 * CREATE TABLE animals (id serial PRIMARY KEY, name VARCHAR, danger VARCHAR, health VARCHAR, age VARCHAR, location VARCHAR,ranger VARCHAR);
 * CREATE TABLE sightings (id serial PRIMARY KEY, animalId int, location VARCHAR, rangername VARCHAR, lastsighting timestamp);
-####TEST DATABASE SETUP
+
+### TEST DATABASE SETUP
 * CREATE DATABASE wildlife_tracker_test WITH TEMPLATE wildlife_tracker;
 ## Behaviour Driven Development
 #### 1. Prompt the user to fill the animal track form
@@ -46,8 +48,6 @@ OUTPUT: "Animal three"
 * PostgreSQL 
 * Bootstrap
 * CSS
-## Java known bugs
-
 ## Support and contact details
 For support contact solomonsitati39@gmail.com
 
