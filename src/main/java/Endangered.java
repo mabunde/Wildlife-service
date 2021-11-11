@@ -27,7 +27,7 @@ public class Endangered implements DatabaseManagement {
         return name;
     }
 
-    public String getEndangered() {
+    public String getDanger() {
         return danger;
     }
 
