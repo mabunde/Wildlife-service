@@ -1,0 +1,50 @@
+.topic{
+text-align: center;
+font-size: 24px;
+}
+*{
+    background-color:rgb(52 78 54);
+}
+.intro{
+color:white;
+font-size:18px;
+}
+option{
+color:white;
+}
+.presentation{
+font-size:20px;
+}
+.animals{
+color:white;
+}
+#animals{
+border-bottom: #23353C;
+    list-style: none;
+    color: #23353C;
+    font-size: 24px;
+    font-weight: bold;
+    border-bottom: solid #23353C 2px;
+    padding-bottom: 20px;
+}
+#value{
+    color: white;
+    margin-left: 10px;
+}
+.successful{
+color:white;
+text-align:center;
+font-size: 18px;
+}
+.image{
+margin-left:100px;
+}
+.buttons1{
+margin-top:60px;
+}
+#new{
+margin-left:150px;
+}
+#new1{
+margin-left:50px;
+}
